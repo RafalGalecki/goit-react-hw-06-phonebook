@@ -4,13 +4,11 @@ import { setFilter } from 'redux/filterSlice';
 import { nanoid } from 'nanoid';
 import css from './Filter.module.css';
 
-
 const Filter = () => {
   const dispatch = useDispatch();
   const filterId = nanoid();
 
   const handleChange = event => {
-    console.log(event.currentTarget.value);
     dispatch(setFilter(event.currentTarget.value));
   };
 
@@ -26,6 +24,5 @@ const Filter = () => {
     </div>
   );
 };
-
 
 export default Filter;

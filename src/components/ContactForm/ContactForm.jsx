@@ -4,7 +4,6 @@ import { getContacts } from 'redux/selectors';
 import { addContact } from '../../redux/contactsSlice';
 import { Notify } from 'notiflix';
 import css from './ContactForm.module.css';
-//import PropTypes from 'prop-types';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -68,12 +67,5 @@ const ContactForm = () => {
     </form>
   );
 };
-
-// ContactForm.propTypes = {
-//   name: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-//   number: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
-//   addContact: PropTypes.func,
-//   contacts: PropTypes.array,
-// };
 
 export default ContactForm;
